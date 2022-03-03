@@ -18,7 +18,7 @@
 
 /* CSS for the Displayed Card */
 .display-container {
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .shown-pokemon-container {
@@ -31,6 +31,7 @@
 
 .front-card-display {
     width: 225px;
+    border-radius: 10px;
     position: absolute;
 }
 
@@ -55,6 +56,7 @@
     background-color: #D62828;
 }
 .deal-button {
+    margin-top: 25px;
     font-size: 25px;
     font-weight: bold;
     padding: 10px;

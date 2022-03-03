@@ -14,7 +14,7 @@ function DisplayCard( { backCard, url, setDisplayedPokemon } ) {
         <div className='displayed-card' onClick={ clickCard }>
             {
                 display === false ? 
-                    <img src={backCard} className="back-of-card"/>
+                    <img src={backCard} className="back-of-card" alt=''/>
                 :
                     null
             }

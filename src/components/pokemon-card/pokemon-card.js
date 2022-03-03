@@ -47,7 +47,7 @@ function  PokemonCard({ frontCard, backCard, deckCard }) {
             setPokemonImages([pokemon0, pokemon1, pokemon2, pokemon3, pokemon4])
         }
 
-    }, [pokemon4])
+    }, [pokemon0, pokemon1, pokemon2, pokemon3, pokemon4])
 
 
 
@@ -81,8 +81,8 @@ function  PokemonCard({ frontCard, backCard, deckCard }) {
                 {
                     displayedPokemon ? 
                         <div className='shown-pokemon-container'>
-                            <img src={frontCard} className="front-card-display"/>
-                            {<img src={displayedPokemon} className="shown-pokemon"/>}
+                            <img src={frontCard} className="front-card-display" alt=''/>
+                            <img src={displayedPokemon} className="shown-pokemon" alt=''/>
                         </div>
                     :
                         <h1>Pokemon Shuffler</h1>
@@ -95,13 +95,14 @@ function  PokemonCard({ frontCard, backCard, deckCard }) {
                     pokemonImages.length > 0 ?
                         pokemonImages.map((url, i) => <DisplayCard className="back-card" key={i} backCard={backCard} frontCard={frontCard} url={url} setDisplayedPokemon={setDisplayedPokemon}/>)
                     :
-                        <img src={deckCard} className="card-stack"/>
+                        <img src={deckCard} className="card-stack" alt=''/>
                 }
             </div>
 
-            <button type='button' onClick={ generateCards } className="deal-button">
+            <button type='button' onClick={generateCards} className="deal-button">
                 Deal Cards
             </button>
+
         </div>
     )
 
