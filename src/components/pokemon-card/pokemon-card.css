@@ -1,0 +1,78 @@
+/* Main display CSS */
+.pokemon-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Container for back facing cards */
+.card-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* CSS for the Displayed Card */
+.display-container {
+    margin-top: 5%;
+}
+
+.shown-pokemon-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-card-display {
+    width: 225px;
+    position: absolute;
+}
+
+.shown-pokemon {
+    width: 200px;
+    position: relative;
+}
+
+
+/* Deal Button and Card Deck CsS */
+.deal-button {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+
+    box-shadow: 1px 9px 20px 0px #7e7b7b;
+
+    color: white;
+    background-color: #D62828;
+}
+.deal-button {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+
+    box-shadow: 1px 9px 20px 0px #7e7b7b;
+
+    color: white;
+    background-color: #D62828;
+}
+.deal-button:hover {
+    background-color: #0f1671;
+
+    transition: 1s;
+}
+
+.card-stack {
+    width: 300px;
+}

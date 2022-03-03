@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import backCard from './images/back-card.png'
+import frontCard from './images/front-card.png'
+import deckCard from './images/deck-card.png'
+
+
+import PokemonCard from './components/pokemon-card/pokemon-card'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      < PokemonCard frontCard={frontCard} backCard={backCard} deckCard={deckCard}/>
     </div>
   );
 }
